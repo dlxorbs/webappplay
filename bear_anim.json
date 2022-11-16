@@ -1,0 +1,28 @@
+{
+    "anims": [
+        {
+            "key": "idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "bear",
+                    "frame": "bear_idle_1"
+                },
+                {
+                    "key": "bear",
+                    "frame": "bear_idle_2"
+                },
+                {
+                    "key": "bear",
+                    "frame": "bear_idle_3"
+                },
+                {
+                    "key": "bear",
+                    "frame": "bear_idle_4"
+                }
+            ]
+        }
+    ]
+}
