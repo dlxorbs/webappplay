@@ -32,24 +32,24 @@ class Bear {
     } 
 
 
-    // move(){
-    //     if (keyIsPressed){
-    //         if (keyCode == LEFT_ARROW){
-    //          this.x-=4;
+    move(){
+        if (keyIsPressed){
+            if (keyCode == LEFT_ARROW){
+             this.x-=4;
               
-    //         }else if(keyCode == RIGHT_ARROW){
-    //             this.x+=4;
+            }else if(keyCode == RIGHT_ARROW){
+                this.x+=4;
         
               
-    //         }else if(keyCode == UP_ARROW){
-    //             this.y-=4;
+            }else if(keyCode == UP_ARROW){
+                this.y-=4;
          
-    //         }else if(keyCode == DOWN_ARROW){
-    //             this.y+=4;
+            }else if(keyCode == DOWN_ARROW){
+                this.y+=4;
         
-    //         }
-    //       }
-    // }
+            }
+          }
+    }
 
 
   }
@@ -78,24 +78,24 @@ class Bear {
     } 
 
 
-    // move(){
-    //     if (keyIsPressed){
-    //         if (keyCode == LEFT_ARROW){
-    //          this.x-=4;
+    move(){
+        if (keyIsPressed){
+            if (keyCode == LEFT_ARROW){
+             this.x-=4;
               
-    //         }else if(keyCode == RIGHT_ARROW){
-    //             this.x+=4;
+            }else if(keyCode == RIGHT_ARROW){
+                this.x+=4;
         
               
-    //         }else if(keyCode == UP_ARROW){
-    //             this.y-=4;
+            }else if(keyCode == UP_ARROW){
+                this.y-=4;
          
-    //         }else if(keyCode == DOWN_ARROW){
-    //             this.y+=4;
+            }else if(keyCode == DOWN_ARROW){
+                this.y+=4;
         
-    //         }
-    //       }
-    // }
+            }
+          }
+    }
 
 
   }
@@ -124,24 +124,24 @@ class Bear {
     } 
 
 
-    // move(){
-    //     if (keyIsPressed){
-    //         if (keyCode == LEFT_ARROW){
-    //          this.x-=4;
+    move(){
+        if (keyIsPressed){
+            if (keyCode == LEFT_ARROW){
+             this.x-=4;
               
-    //         }else if(keyCode == RIGHT_ARROW){
-    //             this.x+=4;
+            }else if(keyCode == RIGHT_ARROW){
+                this.x+=4;
         
               
-    //         }else if(keyCode == UP_ARROW){
-    //             this.y-=4;
+            }else if(keyCode == UP_ARROW){
+                this.y-=4;
          
-    //         }else if(keyCode == DOWN_ARROW){
-    //             this.y+=4;
+            }else if(keyCode == DOWN_ARROW){
+                this.y+=4;
         
-    //         }
-    //       }
-    // }
+            }
+          }
+    }
 
 
   }
@@ -169,7 +169,24 @@ class Bear {
     animate() {
       this.index += this.speed; 
     } 
-
+    move(){
+      if (keyIsPressed){
+          if (keyCode == LEFT_ARROW){
+           this.x-=4;
+            
+          }else if(keyCode == RIGHT_ARROW){
+              this.x+=4;
+      
+            
+          }else if(keyCode == UP_ARROW){
+              this.y-=4;
+       
+          }else if(keyCode == DOWN_ARROW){
+              this.y+=4;
+      
+          }
+        }
+  }
 
 
 
@@ -198,6 +215,7 @@ let bear = [];
 let down = [];
 let left = [];
 let right = [];
+
 function preload() {
 
         atlas = loadJSON('./santa/santa_atlas.json');
@@ -261,19 +279,38 @@ function draw() {
          
         left[0].show();
         left[0].animate();
+        bear[0].move()
+        left[0].move()
+        right[0].move()
+        down[0].move()
   
        }else if(keyCode == RIGHT_ARROW){
         image.x+=4;
         right[0].show();
         right[0].animate();
+        bear[0].move()
+        left[0].move()
+        right[0].move()
+        down[0].move()
+  
          
        }else if(keyCode == UP_ARROW){
         image.y-=4;
+        bear[0].show();
+        bear[0].animate();
+        bear[0].move()
+        left[0].move()
+        right[0].move()
+        down[0].move()
     
        }else if(keyCode == DOWN_ARROW){
-        image.y+=4;
+      
         down[0].show();
         down[0].animate();
+        bear[0].move()
+        left[0].move()
+        right[0].move()
+        down[0].move()
   
        }
 
@@ -281,6 +318,11 @@ function draw() {
   }else{
       bear[0].show();
       bear[0].animate();
+      bear[0].move()
+      left[0].move()
+      right[0].move()
+      down[0].move()
+
   }
     
 
