@@ -31,44 +31,61 @@ class Bear {
       this.index += this.speed; 
     } 
 
-
     move(){
-        if (keyIsPressed){
-            if (keyCode == LEFT_ARROW){
-                 if(this.x <= 0 ){
-              this.x = 0;
-             }else{
-              this.x-=4;
-      
+      if (keyIsPressed){
+          if (keyCode == LEFT_ARROW){
+              if(this.x <= 0  ){
+                  this.x = 0;
+              }else{
+                  this.x-=4;
             }
-              
-            }else if(keyCode == RIGHT_ARROW){
-                   if(this.x >= 590 ){
-              this.x = 590;
-             }else{
-              this.x+=4;
-      
-            }
-        
-              
-            }else if(keyCode == UP_ARROW){
-              if(this.y <= 0  ){
-                this.y = 0;
-               }else{
-                this.y-=4;
-        
+            
+            if(this.y <= 340 && this.y >= 170 ){
+              if(this.x <= 230){
+                this.x = 230.1
               }
-         
-            }else if(keyCode == DOWN_ARROW){
-              if(this.y >= 400  ){
-              this.y = 400;
-             }else{
-              this.y+=4;
-      
-            }  
             }
+            
+          }else if(keyCode == RIGHT_ARROW){
+                 if(this.x >= 590  ){
+                     this.x = 590;
+                  }else{
+                    this.x += 4;
+      
+            }
+      
+            
+          }else if(keyCode == UP_ARROW){
+                if(this.y <= 0  ){
+                  this.y = 0;
+                }else{
+                  this.y-=4;
+                }
+
+                if(this.x <= 230 && this.x >= 0 ){
+                  if(this.y <= 340 && this.y >= 290 ){
+                    this.y = 340.1
+                  }
+                }
+          }else if(keyCode == DOWN_ARROW){
+                if(this.y >= 1000  ){
+                  this.y = 1000;
+                }else{
+                  this.y+=4;
+                }
+
+                if(this.x <= 230 && this.x  >= 0 ){
+                  if(this.y >= 170 && this.y <= 290){
+                    this.y = 169.9
+                  }
+                }
           }
-    }
+
+          
+        }
+  }
+
+
 
 
   }
@@ -98,41 +115,62 @@ class Bear {
 
 
     move(){
-        if (keyIsPressed){
-            if (keyCode == LEFT_ARROW){
-                 if(this.x <= 0  ){
-              this.x = 0;
-             }else{
-              this.x-=4;
-      
+      if (keyIsPressed){
+          if (keyCode == LEFT_ARROW){
+              if(this.x <= 0  ){
+                  this.x = 0;
+              }else{
+                  this.x-=4;
             }
-              
-            }else if(keyCode == RIGHT_ARROW){
-                   if(this.x >= 590  ){
-              this.x = 590;
-             }else{
-              this.x+=4;
-      
-            }
-        
-              
-            }else if(keyCode == UP_ARROW){
-              if(this.y <= 0  ){
-                this.y = 0;
-               }else{
-                this.y-=4;
-        
+            
+            if(this.y <= 340 && this.y >= 170 ){
+              if(this.x <= 230){
+                this.x = 230.1
               }
-            }else if(keyCode == DOWN_ARROW){
-              if(this.y >= 400  ){
-              this.y = 400;
-             }else{
-              this.y+=4;
-      
-            }  
             }
+            
+          }else if(keyCode == RIGHT_ARROW){
+                 if(this.x >= 590  ){
+                     this.x = 590;
+                  }else{
+                    this.x += 4;
+      
+            }
+      
+            
+          }else if(keyCode == UP_ARROW){
+                if(this.y <= 0  ){
+                  this.y = 0;
+                }else{
+                  this.y-=4;
+                }
+
+                if(this.x <= 230 && this.x >= 0 ){
+                  if(this.y <= 340 && this.y >= 290 ){
+                    this.y = 340.1
+                  }
+                }
+          }else if(keyCode == DOWN_ARROW){
+                if(this.y >= 1000  ){
+                  this.y = 1000;
+                }else{
+                  this.y+=4;
+                }
+
+                if(this.x <= 230 && this.x  >= 0 ){
+                  if(this.y >= 170 && this.y <= 290){
+                    this.y = 169.9
+                  }
+                }
           }
-    }
+
+          
+        }
+  }
+
+
+
+
 
 
   }
@@ -162,41 +200,61 @@ class Bear {
 
 
     move(){
-        if (keyIsPressed){
-            if (keyCode == LEFT_ARROW){
-                 if(this.x <= 0  ){
-              this.x = 0;
-             }else{
-              this.x-=4;
-      
+      if (keyIsPressed){
+          if (keyCode == LEFT_ARROW){
+              if(this.x <= 0  ){
+                  this.x = 0;
+              }else{
+                  this.x-=4;
             }
-              
-            }else if(keyCode == RIGHT_ARROW){
-                   if(this.x >= 590  ){
-              this.x = 590;
-             }else{
-              this.x+=4;
-      
-            }
-        
-              
-            }else if(keyCode == UP_ARROW){
-              if(this.y <= 0  ){
-                this.y = 0;
-               }else{
-                this.y-=4;
-        
+            
+            if(this.y <= 340 && this.y >= 170 ){
+              if(this.x <= 230){
+                this.x = 230.1
               }
-            }else if(keyCode == DOWN_ARROW){
-              if(this.y >= 400  ){
-              this.y = 400;
-             }else{
-              this.y+=4;
-      
-            }  
             }
+            
+          }else if(keyCode == RIGHT_ARROW){
+                 if(this.x >= 590  ){
+                     this.x = 590;
+                  }else{
+                    this.x += 4;
+      
+            }
+      
+            
+          }else if(keyCode == UP_ARROW){
+                if(this.y <= 0  ){
+                  this.y = 0;
+                }else{
+                  this.y-=4;
+                }
+
+                if(this.x <= 230 && this.x >= 0 ){
+                  if(this.y <= 340 && this.y >= 290 ){
+                    this.y = 340.1
+                  }
+                }
+          }else if(keyCode == DOWN_ARROW){
+                if(this.y >= 1000  ){
+                  this.y = 1000;
+                }else{
+                  this.y+=4;
+                }
+
+                if(this.x <= 230 && this.x  >= 0 ){
+                  if(this.y >= 170 && this.y <= 290){
+                    this.y = 169.9
+                  }
+                }
           }
-    }
+
+          
+        }
+  }
+
+
+
 
 
   }
@@ -227,40 +285,61 @@ class Bear {
     move(){
       if (keyIsPressed){
           if (keyCode == LEFT_ARROW){
-               if(this.x <= 0  ){
-              this.x = 0;
-             }else{
-              this.x-=4;
-      
+              if(this.x <= 0  ){
+                  this.x = 0;
+              }else{
+                  this.x-=4;
+            }
+            
+            if(this.y <= 340 && this.y >= 170 ){
+              if(this.x <= 230){
+                this.x = 230.1
+              }
             }
             
           }else if(keyCode == RIGHT_ARROW){
                  if(this.x >= 590  ){
-              this.x = 590;
-             }else{
-              this.x+=4;
+                     this.x = 590;
+                  }else{
+                    this.x += 4;
       
             }
       
             
           }else if(keyCode == UP_ARROW){
-            if(this.y <= 0  ){
-              this.y = 0;
-             }else{
-              this.y-=4;
-      
-            }
-       
+                if(this.y <= 0  ){
+                  this.y = 0;
+                }else{
+                  this.y-=4;
+                }
+
+                if(this.x <= 230 && this.x >= 0 ){
+                  if(this.y <= 340 && this.y >= 290 ){
+                    this.y = 340.1
+                  }
+                }
           }else if(keyCode == DOWN_ARROW){
-            if(this.y >= 400  ){
-              this.y = 400;
-             }else{
-              this.y+=4;
-      
-            }
+                if(this.y >= 1000  ){
+                  this.y = 1000;
+                }else{
+                  this.y+=4;
+                }
+
+                if(this.x <= 230 && this.x  >= 0 ){
+                  if(this.y >= 170 && this.y <= 290){
+                    this.y = 169.9
+                  }
+                }
           }
+
+          
         }
   }
+
+
+
+
+
 
 
 
@@ -293,35 +372,51 @@ class Bear {
     move(){
       if (keyIsPressed){
           if (keyCode == LEFT_ARROW){
-                if(this.x <= 0  ){
-              this.x = 0;
-             }else{
-              this.x-=4;
-      
+              if(this.x <= 0  ){
+                  this.x = 0;
+              }else{
+                  this.x-=4;
+            }
+            
+            if(this.y <= 340 && this.y >= 170 ){
+              if(this.x <= 230){
+                this.x = 230.1
+              }
             }
             
           }else if(keyCode == RIGHT_ARROW){
                  if(this.x >= 590  ){
-              this.x = 590;
-             }else{
-              this.x+=4;
+                     this.x = 590;
+                  }else{
+                    this.x += 4;
       
             }
       
             
           }else if(keyCode == UP_ARROW){
-            if(this.y <= 0  ){
-              this.y = 0;
-             }else{
-              this.y-=4;
-      
-            }
+                if(this.y <= 0  ){
+                  this.y = 0;
+                }else{
+                  this.y-=4;
+                }
+
+                if(this.x <= 230 && this.x >= 0 ){
+                  if(this.y <= 340 && this.y >= 290 ){
+                    this.y = 340.1
+                  }
+                }
           }else if(keyCode == DOWN_ARROW){
-            if(this.y >= 400  ){
-              this.y = 400;
-             }else{
-              this.y+=4;
-            }
+                if(this.y >= 1000  ){
+                  this.y = 1000;
+                }else{
+                  this.y+=4;
+                }
+
+                if(this.x <= 230 && this.x  >= 0 ){
+                  if(this.y >= 170 && this.y <= 290){
+                    this.y = 169.9
+                  }
+                }
           }
 
           
@@ -330,13 +425,39 @@ class Bear {
 
 
 
+
   }
 
 
+  
+class Chimmey {
+  constructor(Chianimation, x, y, speed) {
+
+    this.x = x;
+    this.y = y;
+    this.Chianimation = Chianimation;
+    this.w = this.Chianimation[0].width;
+    this.len = this.Chianimation.length;
+    this.speed = speed;
+    this.index = 0;
+
+  }
+
+  show() {
+    let index = floor(this.index) % this.len;
+    image( this.Chianimation[index] , this.x , this.y);
+
+  }
+
+  animate() {
+    this.index += this.speed; 
+  } 
 
 
-let x =0;
-let y =0;
+}
+
+let x =100;
+let y =100;
 let target;
 let atlas;
 let Dtarget;
@@ -348,18 +469,27 @@ let Ratlas;
 let Utarget;
 let Uatlas;
 
+
+
+let Chitarget;
+let Chiatlas;
+
+
+
+
 let animation = [];
 let Danimation = [];
 let Lanimation = [];
 let Ranimation = [];
 let Uanimation = [];
-
+let Chianimation = [];
 
 let bear = [];
 let down = [];
 let left = [];
 let right = [];
 let up = [];
+let chimmey = [];
 
 function preload() {
 
@@ -374,11 +504,17 @@ function preload() {
         Uatlas = loadJSON('./santa_up/santa_up_atlas.json');
         Utarget = loadImage('./santa_up/santa_up.png');
 
+
+
+        Chiatlas = loadJSON('./chimmey/chimmey_atlas.json');
+        Chitarget = loadImage('./chimmey/chimmey.png');
+        Chiimage =  loadImage('./chimmey/chimmeybottom.png');
+
 }
 
 
 function setup() {
-  createCanvas(640, 480);
+  createCanvas(1920,1080);
   let frames = atlas.frames;
   for (let i = 0; i < frames.length; i++) {
     let pos = frames[i].frame;
@@ -415,22 +551,34 @@ function setup() {
     Uanimation.push(Uimg);
   }
 
+
+
+
+  let Chiframes = Chiatlas.frames;
+  for (let i = 0; i < Chiframes.length; i++) {
+    let Chipos = Chiframes[i].frame;
+    let Chiimg = Chitarget.get(Chipos.x, Chipos.y, Chipos.w, Chipos.h);
+    Chianimation.push(Chiimg);
+  }
+  chimmey[0] = new Chimmey(Chianimation, 14 ,50, 0.05);
+
   bear[0] = new Bear(animation,x,y, 0.1);
   down[0] = new Down(Danimation, x ,y, 0.1);
   left[0] = new Left(Lanimation, x ,y, 0.1);
   right[0] = new Right(Ranimation, x ,y, 0.1);
   up[0] = new Up(Uanimation, x ,y, 0.1);
+
 }
 
 function draw() {
-  background(0, 100, 150);
+  background(20, 10, 20);
+
+  image(Chiimage, 14, 50);
+
 
   if (keyIsPressed){
-
-
+    if( keyCode == LEFT_ARROW || keyCode == RIGHT_ARROW ||keyCode == UP_ARROW ||keyCode == DOWN_ARROW ){
       if (keyCode == LEFT_ARROW){
-        image.x-=4;
-         
         left[0].show();
         left[0].animate();
         bear[0].move()
@@ -440,7 +588,6 @@ function draw() {
         up[0].move()
   
        }else if(keyCode == RIGHT_ARROW){
-        image.x+=4;
         right[0].show();
         right[0].animate();
         bear[0].move()
@@ -450,7 +597,6 @@ function draw() {
         up[0].move()
          
        }else if(keyCode == UP_ARROW){
-        image.y-=4;
         up[0].show();
         up[0].animate();
         bear[0].move()
@@ -469,6 +615,15 @@ function draw() {
         up[0].move()
        }
 
+    }else{
+      bear[0].show();
+      bear[0].animate();
+      bear[0].move()
+      left[0].move()
+      right[0].move()
+      down[0].move()
+      up[0].move()
+    }
 
 
   }else{
@@ -482,14 +637,11 @@ function draw() {
   }
     
 
-  
-
-  if (keyIsPressed){
-    
-  }
-      
+   
+  chimmey[0].show();
+  chimmey[0].animate();   
     // rect(100, 200, 200, 140)
     // color(255,255,0)
 }
 
-console.log(down)
+console.log(bear[0])
